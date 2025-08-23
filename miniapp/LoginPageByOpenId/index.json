@@ -1,0 +1,4 @@
+{
+  "component": true,
+  "usingComponents": {"a":"@cloudbase/weda-ui-mp/components/grid/index","b":"@cloudbase/weda-ui-mp/components/grid/row/index","c":"@cloudbase/weda-ui-mp/components/grid/col/index","d":"@cloudbase/weda-ui-mp/components/wd-image/index","e":"@cloudbase/weda-ui-mp/components/wd-text/index","f":"@cloudbase/weda-ui-mp/components/wd-button/index"}
+}

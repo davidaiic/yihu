@@ -1,0 +1,8 @@
+[
+  {
+    "_id": "perm_order_create",
+    "key": "order.create",
+    "description": "创建订单",
+    "defaultGrant": true
+  }
+]

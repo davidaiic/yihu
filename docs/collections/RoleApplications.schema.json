@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RoleApplications",
+  "description": "角色申请：用户申请成为护理员/管理者的审批流程记录。",
+  "type": "object",
+  "required": [ "_id", "applicantOpenId", "targetRole", "status", "createdAt" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "applicantOpenId": { "type": "string" },
+    "targetRole": {
+      "type": "string",
+      "description": "目标角色Key（参见 Roles）"
+    },
+    "attachments": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "资质图片/证书URL"
+    },
+    "status": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "pending",
+          "description": "待审批"
+        },
+        {
+          "const": "approved",
+          "description": "已批准"
+        },
+        {
+          "const": "rejected",
+          "description": "已驳回"
+        }
+      ]
+    },
+    "reviewerId": { "type": [ "string", "null" ] },
+    "reviewedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

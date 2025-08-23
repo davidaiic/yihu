@@ -1,0 +1,43 @@
+.wa-comp-block-u_shou_hu_home {
+  /**
+     * 可以使用theme中定义的 mixin 和 定义变量
+     * 
+     **/
+}
+.wa-comp-block-u_shou_hu_home :scope .user-location-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.wa-comp-block-u_shou_hu_home :scope .avatar-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.wa-comp-block-u_shou_hu_home :scope .city-text {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 32px;
+  height: 32px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.wa-comp-block-u_shou_hu_home :scope .user-location-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.wa-comp-block-u_shou_hu_home :scope .avatar-image:hover {
+  transform: scale(1.05);
+}

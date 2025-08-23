@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CaregiverSearchIndex",
+  "description": "护理员检索冗余表：聚合评分、技能、服务范围、经纬度、可约分数等。",
+  "type": "object",
+  "required": [ "_id", "caregiverId", "citystdname" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "caregiverId": { "type": "string" },
+    "citystdname": { "type": "string" },
+    "geo": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "services": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rating": {
+      "type": [ "number", "null" ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "availableScore": {
+      "type": [ "number", "null" ],
+      "description": "可约评分/排序权重"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

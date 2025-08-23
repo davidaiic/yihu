@@ -1,0 +1,4 @@
+
+  @import  'lowcode/style.wxss';
+
+.ai-generate-wrapper{--wd-font-base:14px;--wd-font-size-default:14px;font-size:14px;font-family:--apple-system- var(--wd-font-family)}.ai-generate-wrapper view,.ai-generate-wrapper div,.ai-generate-wrapper button{box-sizing:border-box;border-width:0;border-style:solid;border-color:currentColor}.ai-generate-wrapper button.wd-btn--outline{border-width:1px}.ai-generate-wrapper button.wd-btn,.ai-generate-wrapper button.wd-btn:hover:not(.is-disabled){color:inherit;background-color:transparent;background-image:none}

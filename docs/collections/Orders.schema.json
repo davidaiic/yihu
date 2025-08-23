@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Orders",
+  "description": "订单：统一承载 homeCare / inHospital / accompaniment / maternity / errand 等。",
+  "type": "object",
+  "required": [ "_id", "type", "amount", "status", "openid", "createdAt" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": [ "homeCare", "inHospital", "accompaniment", "maternity", "errand" ]
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [ "created", "pending_pay", "paid", "canceled", "refunded", "closed" ]
+    },
+    "openid": { "type": "string" },
+    "deptId": { "type": [ "string", "null" ] },
+    "selectedItem": { "type": "object" },
+    "patientInfo": { "type": "object" },
+    "startDate": { "type": [ "string", "null" ] },
+    "days": {
+      "type": [ "integer", "null" ],
+      "minimum": 1
+    },
+    "notes": { "type": [ "string", "null" ] },
+    "payInfo": { "type": [ "object", "null" ] },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

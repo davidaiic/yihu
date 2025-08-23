@@ -1,0 +1,5 @@
+
+  @import  'lowcode/style.wxss';
+
+#wd-page-root .wd-comp-id-button3 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button3{font-size:14px}}
+#wd-page-root .wd-comp-id-button4 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button4{font-size:14px}}

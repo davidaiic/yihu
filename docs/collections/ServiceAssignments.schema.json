@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ServiceAssignments",
+  "description": "护理员在某机构/团队可提供的服务项与状态，可含个性化定价。",
+  "type": "object",
+  "required": [ "_id", "caregiverId", "deptId", "serviceKey", "status" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "caregiverId": { "type": "string" },
+    "deptId": {
+      "type": "string",
+      "description": "Department._id（医院/病区/站点/团队）"
+    },
+    "serviceKey": {
+      "type": "string",
+      "description": "ServiceTemplates.key 或 部门级售卖项 key"
+    },
+    "pricingModel": {
+      "type": "string",
+      "enum": [ "dept_item", "override" ],
+      "default": "dept_item",
+      "description": "定价模式：默认跟随部门售卖项（dept_item）；极少数场景允许个人覆盖（override）。"
+    },
+    "priceOverride": {
+      "type": [ "number", "null" ],
+      "minimum": 0,
+      "description": "仅当 pricingModel=override 时生效；常规不建议使用。"
+    },
+    "status": {
+      "type": "string",
+      "enum": [ "pending", "approved", "inactive" ]
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  },
+  "oneOf": [
+    {
+      "description": "常规：部门统一定价，不允许个人覆盖",
+      "properties": {
+        "pricingModel": { "const": "dept_item" },
+        "priceOverride": { "type": [ "null" ] }
+      },
+      "required": [ "pricingModel" ]
+    },
+    {
+      "description": "特殊：个人覆盖定价（需审批）",
+      "properties": {
+        "pricingModel": { "const": "override" },
+        "priceOverride": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [ "pricingModel", "priceOverride" ]
+    }
+  ]
+}

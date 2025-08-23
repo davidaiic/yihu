@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ServiceTemplates",
+  "description": "服务模板（细化项）：继承 ServiceTypes，用于落到医院/团队/站点后形成售卖项。",
+  "type": "object",
+  "required": [ "_id", "key", "name", "typeKey", "unit", "basePrice", "status" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "key": { "type": "string" },
+    "name": { "type": "string" },
+    "typeKey": {
+      "type": "string",
+      "description": "ServiceTypes.key"
+    },
+    "unit": {
+      "type": "string",
+      "description": "计价单位，如 次/天/小时"
+    },
+    "durationMin": {
+      "type": [ "integer", "null" ],
+      "description": "默认时长（分钟）"
+    },
+    "basePrice": {
+      "type": "number",
+      "minimum": 0
+    },
+    "attrs": {
+      "type": "object",
+      "description": "可选属性，如 护理等级、是否含耗材 等"
+    },
+    "status": {
+      "type": "string",
+      "enum": [ "active", "inactive" ]
+    }
+  }
+}

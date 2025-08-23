@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Permissions",
+  "description": "权限粒度：定义系统中的原子操作（由 Roles 组合授予）。",
+  "type": "object",
+  "required": [ "_id", "key", "description" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "key": {
+      "type": "string",
+      "description": "唯一权限Key，如 order.read、order.create、dept.manage"
+    },
+    "scope": {
+      "type": [ "string", "null" ],
+      "description": "作用域限定（如 city/province/dept）"
+    },
+    "description": { "type": "string" },
+    "defaultGrant": {
+      "type": [ "boolean", "null" ],
+      "description": "是否默认授予给基础角色（如 user）"
+    }
+  }
+}

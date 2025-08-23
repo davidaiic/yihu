@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "t_home",
+    "key": "homeCare",
+    "name": "居家护理",
+    "status": "active"
+  },
+  {
+    "_id": "t_inh",
+    "key": "inHospital",
+    "name": "住院护理",
+    "status": "active"
+  },
+  {
+    "_id": "t_acc",
+    "key": "accompaniment",
+    "name": "医院陪诊",
+    "status": "active"
+  }
+]

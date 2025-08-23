@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "o_20250812_001",
+    "type": "inHospital",
+    "amount": 180,
+    "status": "pending_pay",
+    "openid": "openid_abc",
+    "deptId": "ward_301_1",
+    "selectedItem": {
+      "_id": "in_hospital_l2",
+      "name": "住院护理-二级",
+      "unitPrice": 180
+    },
+    "patientInfo": {
+      "name": "王先生",
+      "gender": "M",
+      "age": 68
+    },
+    "startDate": "2025-08-16",
+    "days": 2,
+    "notes": "夜间需陪护",
+    "createdAt": 1723440000000
+  }
+]

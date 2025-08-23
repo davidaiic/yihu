@@ -1,0 +1,4 @@
+{
+  "component": true,
+  "usingComponents": {"a":"@cloudbase/weda-ui-mp/components/container/index","b":"@cloudbase/weda-ui-mp/components/wd-card/index","c":"@cloudbase/weda-ui-mp/components/wd-icon/index","d":"@cloudbase/weda-ui-mp/components/wd-text/index","e":"@cloudbase/weda-ui-mp/components/wd-tag/index","f":"@cloudbase/weda-ui-mp/components/scrollView/index","g":"@cloudbase/weda-ui-mp/components/wd-image/index","h":"@cloudbase/weda-ui-mp/components/wd-textarea/index","i":"@cloudbase/weda-ui-mp/components/wd-button/index"}
+}

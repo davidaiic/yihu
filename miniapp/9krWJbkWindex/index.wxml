@@ -1,0 +1,14 @@
+<a id="grid1" style="{{grid1.style}};{{style}}" className="wa-comp-block-9krWJbkWindex {{grid1.className}} {{className}}" gutterX="{{grid1.gutterX}}" gutterY="{{grid1.gutterY}}" template="{{grid1.template}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+	<b id="row1" style="{{row1.style}}" className="{{row1.className}}" alignItems="{{row1.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col1" style="{{col1.style}}" className="{{col1.className}}" alignSelf="{{col1.alignSelf}}" widthType="{{col1.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+	</b>
+	<b id="row2" style="{{row2.style}}" className="{{row2.className}}" alignItems="{{row2.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col2" style="{{col2.style}}" className="{{col2.className}}" alignSelf="{{col2.alignSelf}}" widthType="{{col2.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		<c id="col3" style="{{col3.style}}" className="{{col3.className}}" alignSelf="{{col3.alignSelf}}" widthType="{{col3.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		<c id="col4" style="{{col4.style}}" className="{{col4.className}}" alignSelf="{{col4.alignSelf}}" widthType="{{col4.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		<c id="col5" style="{{col5.style}}" className="{{col5.className}}" alignSelf="{{col5.alignSelf}}" widthType="{{col5.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+	</b>
+	<b id="row3" style="{{row3.style}}" className="{{row3.className}}" alignItems="{{row3.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col6" style="{{col6.style}}" className="{{col6.className}}" alignSelf="{{col6.alignSelf}}" widthType="{{col6.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+	</b>
+</a>

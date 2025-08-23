@@ -1,0 +1,19 @@
+component: scf
+name: getOrderStatsByOpenId
+inputs:
+  handler: index.main
+  description: "20250625"
+  runtime: Nodejs18.15
+  memorySize: 256
+  installDependency: true
+  timeout: 20
+  vpcConfig:
+    vpcId: ""
+    subnetId: ""
+  events: []
+  layers: []
+  initTimeout: 65
+  protocolParams: null
+  protocolType: ""
+  eip: false
+  publicAccess: true

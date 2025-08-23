@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "dept_country_1",
+    "name": "集团总部",
+    "type": "country",
+    "status": "active"
+  },
+  {
+    "_id": "dept_bj",
+    "name": "北京市",
+    "type": "province",
+    "parentId": "dept_country_1",
+    "status": "active"
+  },
+  {
+    "_id": "dept_bj_city_haidian",
+    "name": "北京市-海淀区",
+    "type": "city",
+    "parentId": "dept_bj",
+    "status": "active"
+  },
+  {
+    "_id": "h_301",
+    "name": "301医院",
+    "type": "hospital",
+    "parentId": "dept_bj_city_haidian",
+    "status": "active"
+  },
+  {
+    "_id": "ward_301_1",
+    "name": "外科一病区",
+    "type": "ward",
+    "parentId": "h_301",
+    "status": "active"
+  },
+  {
+    "_id": "home_bj_1",
+    "name": "北京居家护理站A",
+    "type": "home_station",
+    "parentId": "dept_bj_city_haidian",
+    "status": "active"
+  },
+  {
+    "_id": "acc_team_bj_1",
+    "name": "北京陪诊师团队A",
+    "type": "accompany_team",
+    "parentId": "dept_bj_city_haidian",
+    "status": "active"
+  }
+]

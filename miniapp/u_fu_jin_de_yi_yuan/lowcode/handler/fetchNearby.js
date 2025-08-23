@@ -1,0 +1,71 @@
+import { getWedaAPI } from '@cloudbase/weda-client';
+const app = new Proxy({}, { get: function(obj, prop){ return getWedaAPI()?.app?.[prop] }});
+const $app = new Proxy({}, { get: function(obj, prop){ return app[prop] }});
+const $w = new Proxy({}, { get: function(obj, prop){ return getWedaAPI()?.$w?.[prop] }});
+/**
+ * 
+ * 可通过 $page 获取或修改当前页面的 变量 状态 handler lifecycle 等信息
+ * 可通过 app 获取或修改全局应用的 变量 状态 等信息
+ * 具体可以console.info 在编辑器Console面板查看更多信息
+ * 注意：该方法仅在所属的页面有效
+ * 如果需要 async-await，请修改成 export default async function() {}
+ * 帮助文档 https://cloud.tencent.com/document/product/1301/57912
+ **/
+
+/**
+ * @param {Object} event - 事件对象
+ * @param {string} event.type - 事件名
+ * @param {any} event.detail - 事件携带自定义数据
+ *
+ * @param {Object} data
+ * @param {any} data.target - 获取事件传参的数据
+ **/
+export default async function({event, data1}) {
+
+  console.log('[进入就近选医院页fetchNearby脚本]');
+
+  const {currentPage,pageSize}= this.$WEAPPS_COMP.dataset.state;
+
+  $page.setState({loading:true});
+
+  const loc=this.$WEAPPS_COMP.__internal__?.$w?.app.dataset.state.location;
+
+  try {
+
+    this.$WEAPPS_COMP.__internal__?.$w?.utils.showLoading({ title: '加载中...' });
+    const res=await this.$WEAPPS_COMP.__internal__?.$w?.cloud.callFunction({
+      name:'listHospitalsNearbyByOpenId',
+      data:{
+        page:currentPage,
+        pageSize,
+        latitude:loc.latitude,
+        longitude:loc.longitude,
+        radius:50000
+      }
+    });
+
+    const {data,pagination}=res.result;
+
+    console.log('[就近选医院页fetchNearby脚本，res.result=]', res.result);
+
+    if (!res.result.success){
+        this.$WEAPPS_COMP.__internal__?.$w?.utils.navigateBack({delta : 1});
+    }
+
+    $page.setState({
+      hospitals:data,
+      totalPages:pagination?.totalPages,
+      currentPage:pagination?.currentPage
+    });
+
+  } catch (err) {
+
+    console.error('调用失败', err);
+    this.$WEAPPS_COMP.__internal__?.$w?.utils.showToast({ title: '网络或服务异常', icon: 'none' });
+
+  } finally {
+    this.$WEAPPS_COMP.__internal__?.$w?.utils.hideLoading();
+    $page.setState({ loading: false });
+  }
+
+}

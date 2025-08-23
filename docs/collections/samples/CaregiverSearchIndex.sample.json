@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "csi_001",
+    "caregiverId": "openid_cg1",
+    "citystdname": "北京市",
+    "rating": 4.8,
+    "skills": [ "静脉采血", "输液" ],
+    "services": [ "home_nursing_l4" ],
+    "updatedAt": 1755936000000
+  }
+]

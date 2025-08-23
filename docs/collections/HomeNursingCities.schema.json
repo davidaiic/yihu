@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HomeNursingCities",
+  "description": "已开通居家护理业务的城市列表。",
+  "type": "object",
+  "required": [ "_id", "citystdname", "status" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "citystdname": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": [ "active", "inactive" ]
+    },
+    "center": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

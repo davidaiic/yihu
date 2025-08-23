@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HospitalServiceItems",
+  "description": "服务目录：上门护理/住院护理/陪诊等售卖项；可按城市、机构做启停与定价。",
+  "type": "object",
+  "required": [ "_id", "name", "unitPrice", "type", "status" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "_type": {
+      "type": [ "string", "null" ],
+      "const": "HospitalItem"
+    },
+    "name": { "type": "string" },
+    "templateId": { "type": [ "string", "null" ] },
+    "unitPrice": {
+      "type": "number",
+      "minimum": 0
+    },
+    "type": {
+      "type": "string",
+      "enum": [ "home_nursing_service", "in_hospital", "accompaniment", "maternity", "errand" ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [ "active", "inactive" ]
+    },
+    "citystdname": { "type": [ "string", "null" ] },
+    "location": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

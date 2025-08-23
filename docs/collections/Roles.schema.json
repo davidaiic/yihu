@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Roles",
+  "description": "角色定义：如 user/caregiver/ward_manager/city_manager/province_manager/group_manager 等。",
+  "type": "object",
+  "required": [ "_id", "key", "name" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "key": { "type": "string" },
+    "name": { "type": "string" },
+    "inherits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "继承的父角色key"
+    },
+    "permissions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "权限Key（参见 Permissions）"
+    },
+    "level": {
+      "type": [ "integer", "null" ],
+      "description": "层级（数值越大权限越高，可选）"
+    }
+  }
+}

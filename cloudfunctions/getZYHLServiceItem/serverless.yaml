@@ -1,0 +1,19 @@
+component: scf
+name: getZYHLServiceItem
+inputs:
+  handler: index.main
+  description: 20250730 海啸日
+  runtime: Nodejs18.15
+  memorySize: 256
+  installDependency: true
+  timeout: 3
+  vpcConfig:
+    vpcId: ""
+    subnetId: ""
+  events: []
+  layers: []
+  initTimeout: 65
+  protocolParams: null
+  protocolType: ""
+  eip: false
+  publicAccess: true

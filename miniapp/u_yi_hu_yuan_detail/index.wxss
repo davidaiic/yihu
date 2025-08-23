@@ -1,0 +1,16 @@
+
+  @import  'lowcode/style.wxss';
+
+.ai-generate-wrapper{--wd-font-base:14px;--wd-font-size-default:14px;font-size:14px;font-family:--apple-system- var(--wd-font-family)}.ai-generate-wrapper view,.ai-generate-wrapper div,.ai-generate-wrapper button{box-sizing:border-box;border-width:0;border-style:solid;border-color:currentColor}.ai-generate-wrapper button.wd-btn--outline{border-width:1px}.ai-generate-wrapper button.wd-btn,.ai-generate-wrapper button.wd-btn:hover:not(.is-disabled){color:inherit;background-color:transparent;background-image:none}
+#wd-page-root .wd-comp-id-card1 .wd-card__header{background-color:#ffffff;padding:16px}
+#wd-page-root .wd-comp-id-card2 .wd-card__{padding:16px}
+#wd-page-root .wd-comp-id-button1 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button1{font-size:14px}}
+#wd-page-root .wd-comp-id-button1 .wd-btn__text{color:#212121;display:inline-block;font-size:14px}
+#wd-page-root .wd-comp-id-button1 > i{width:initial;height:initial;font-size:16px;color:#757575}
+#wd-page-root .wd-comp-id-button2 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button2{font-size:14px}}
+#wd-page-root .wd-comp-id-button2 .wd-btn__text{color:#212121;display:inline-block;font-size:14px}
+#wd-page-root .wd-comp-id-button2 > i{width:initial;height:initial;font-size:16px;color:#757575}
+#wd-page-root .wd-comp-id-card3 .wd-card__{padding:16px}
+#wd-page-root .wd-comp-id-card4 .wd-card__{padding:16px}
+#wd-page-root .wd-comp-id-button3 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button3{font-size:14px}}
+#wd-page-root .wd-comp-id-button4 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button4{font-size:14px}}

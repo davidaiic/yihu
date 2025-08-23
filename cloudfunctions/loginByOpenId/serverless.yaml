@@ -1,0 +1,19 @@
+component: scf
+name: loginByOpenId
+inputs:
+  handler: index.main
+  description: "20250627"
+  runtime: Nodejs18.15
+  memorySize: 256
+  installDependency: false
+  timeout: 20
+  vpcConfig:
+    vpcId: ""
+    subnetId: ""
+  events: []
+  layers: []
+  initTimeout: 65
+  protocolParams: null
+  protocolType: ""
+  eip: false
+  publicAccess: true

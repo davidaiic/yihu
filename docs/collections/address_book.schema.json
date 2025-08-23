@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "address_book",
+  "description": "上门服务地址薄：用于居家护理/上门项目，下单时可直接选择。",
+  "type": "object",
+  "required": [ "_id", "ownerOpenId", "contactName", "mobile", "citystdname", "addressLine" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "ownerOpenId": { "type": "string" },
+    "contactName": { "type": "string" },
+    "mobile": { "type": "string" },
+    "citystdname": {
+      "type": "string",
+      "description": "标准城市名（如 北京市）"
+    },
+    "addressLine": {
+      "type": "string",
+      "description": "详细地址（不含门牌）"
+    },
+    "doorplate": {
+      "type": [ "string", "null" ],
+      "description": "门牌/楼栋单元"
+    },
+    "geo": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "isDefault": { "type": [ "boolean", "null" ] },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

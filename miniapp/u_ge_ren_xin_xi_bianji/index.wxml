@@ -1,0 +1,22 @@
+<a id="container1" style="{{container1.style}};{{style}}" className="wa-comp-block-u_ge_ren_xin_xi_bianji {{container1.className}} {{className}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+	<a id="container2" style="{{container2.style}}" className="{{container2.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<a id="container4" style="{{container4.style}}" className="{{container4.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container5" style="{{container5.style}}" className="{{container5.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="uploadImage1" style="{{uploadImage1.style}}" className="{{uploadImage1.className}}" name="{{uploadImage1.name}}" label="{{uploadImage1.label}}" value="{{uploadImage1.value}}" single="{{uploadImage1.single}}" status="{{uploadImage1.status}}" callbacks="{{uploadImage1.callbacks}}" borderedH5="{{uploadImage1.borderedH5}}" requiredMsg="{{uploadImage1.requiredMsg}}" isChooseAvatar="{{uploadImage1.isChooseAvatar}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:success="onuploadImage1$success"/>
+			</a>
+			<a id="container6" style="{{container6.style}}" className="{{container6.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="input1" style="{{input1.style}}" className="{{input1.className}}" name="{{input1.name}}" label="{{input1.label}}" status="{{input1.status}}" template="{{input1.template}}" borderedH5="{{input1.borderedH5}}" prefixType="{{input1.prefixType}}" suffixType="{{input1.suffixType}}" inputValue="{{input1.inputValue}}" placeholder="{{input1.placeholder}}" requiredMsg="{{input1.requiredMsg}}" isNickNameType="{{input1.isNickNameType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="oninput1$change"/>
+			</a>
+		</a>
+		<a id="container8" style="{{container8.style}}" className="{{container8.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container11" style="{{container11.style}}" className="{{container11.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<d id="text1" style="{{text1.style}}" className="{{text1.className}}" text="{{text1.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text1.text}}</d>
+				<d id="text4" style="{{text4.style}}" className="{{text4.className}}" text="{{text4.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text4.text}}</d>
+			</a>
+		</a>
+		<a id="container13" style="{{container13.style}}" className="{{container13.className}}" data="{{container13.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<e id="button1" style="{{button1.style}}" className="{{button1.className}}" icon="{{button1.icon}}" text="{{button1.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton1$tap">{{button1.text}}</e>
+			<e id="button2" style="{{button2.style}}" className="{{button2.className}}" icon="{{button2.icon}}" text="{{button2.text}}" variant="{{button2.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton2$tap">{{button2.text}}</e>
+		</a>
+	</a>
+</a>

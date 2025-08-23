@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "home_nursing_l4",
+    "name": "上门护理-四级",
+    "unitPrice": 420,
+    "type": "home_nursing_service",
+    "status": "active",
+    "citystdname": "北京市"
+  }
+]

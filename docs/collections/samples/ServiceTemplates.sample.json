@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "st_home_l4",
+    "key": "home_nursing_l4",
+    "name": "上门护理-四级",
+    "typeKey": "homeCare",
+    "unit": "天",
+    "durationMin": 120,
+    "basePrice": 420,
+    "attrs": { "level": 4 },
+    "status": "active"
+  }
+]

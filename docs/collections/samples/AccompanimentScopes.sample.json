@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "accs_001",
+    "caregiverId": "openid_cg1",
+    "deptId": "acc_team_bj_1",
+    "citystdname": "北京市",
+    "status": "approved",
+    "approvedBy": "mgr_001",
+    "approvedAt": 1755936000000,
+    "createdAt": 1755850000000
+  }
+]

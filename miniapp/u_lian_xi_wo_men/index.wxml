@@ -1,0 +1,32 @@
+<a id="container1" style="{{container1.style}};{{style}}" className="wa-comp-block-u_lian_xi_wo_men {{container1.className}} {{className}}" title="{{container1.title}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+	<a id="container2" style="{{container2.style}}" className="{{container2.className}}" data="{{container2.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<b id="text1" style="{{text1.style}}" className="{{text1.className}}" text="{{text1.text}}" maxLines="{{text1.maxLines}}" inheritColor="{{text1.inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text1.text}}</b>
+		<b id="text2" style="{{text2.style}}" className="{{text2.className}}" text="{{text2.text}}" maxLines="{{text2.maxLines}}" inheritColor="{{text2.inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text2.text}}</b>
+		<a id="container3" style="{{container3.style}}" className="{{container3.className}}" data="{{container3.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="grid2" style="{{grid2.style}}" className="{{grid2.className}}" template="{{grid2.template}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<d id="row4" style="{{row4.style}}" className="{{row4.className}}" gutterX="{{row4.gutterX}}" colCount="{{row4.colCount}}" alignItems="{{row4.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<e id="col7" style="{{col7.style}}" className="{{col7.className}}" alignSelf="{{col7.alignSelf}}" widthType="{{col7.widthType}}" lgWidthType="{{col7.lgWidthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+						<f id="image1" style="{{image1.style}}" className="{{image1.className}}" alt="{{image1.alt}}" fit="{{image1.fit}}" src="{{image1.src}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+					</e>
+					<e id="col8" style="{{col8.style}}" className="{{col8.className}}" alignSelf="{{col8.alignSelf}}" widthType="{{col8.widthType}}" lgWidthType="{{col8.lgWidthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+						<b id="text3" style="{{text3.style}}" className="{{text3.className}}" text="{{text3.text}}" maxLines="{{text3.maxLines}}" inheritColor="{{text3.inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text3.text}}</b>
+						<b id="text4" style="{{text4.style}}" className="{{text4.className}}" text="{{text4.text}}" maxLines="{{text4.maxLines}}" inheritColor="{{text4.inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text4.text}}</b>
+						<c id="grid3" style="{{grid3.style}}" className="{{grid3.className}}" gutterX="{{grid3.gutterX}}" gutterY="{{grid3.gutterY}}" template="{{grid3.template}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+							<block id="{{'repeater1_item'+ '-' + irepeater1_item}}" wx:for="{{repeater1_item}}" wx:for-index="irepeater1_item" wx:key="$$i">
+								<d id="{{'row5'+ '-' + irepeater1_item}}" style="{{row5[irepeater1_item].style}}" className="{{row5[irepeater1_item].className}}" colCount="{{row5[irepeater1_item].colCount}}" alignItems="{{row5[irepeater1_item].alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+									<e id="{{'col9'+ '-' + irepeater1_item}}" style="{{col9[irepeater1_item].style}}" className="{{col9[irepeater1_item].className}}" alignSelf="{{col9[irepeater1_item].alignSelf}}" widthType="{{col9[irepeater1_item].widthType}}" lgWidthType="{{col9[irepeater1_item].lgWidthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+										<g id="{{'icon1'+ '-' + irepeater1_item}}" style="{{icon1[irepeater1_item].style}}" className="{{icon1[irepeater1_item].className}}" size="{{icon1[irepeater1_item].size}}" name="{{icon1[irepeater1_item].name}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+									</e>
+									<e id="{{'col10'+ '-' + irepeater1_item}}" style="{{col10[irepeater1_item].style}}" className="{{col10[irepeater1_item].className}}" alignSelf="{{col10[irepeater1_item].alignSelf}}" widthType="{{col10[irepeater1_item].widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+										<b id="{{'text5'+ '-' + irepeater1_item}}" style="{{text5[irepeater1_item].style}}" className="{{text5[irepeater1_item].className}}" text="{{text5[irepeater1_item].text}}" maxLines="{{text5[irepeater1_item].maxLines}}" inheritColor="{{text5[irepeater1_item].inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text5[irepeater1_item].text}}</b>
+										<b id="{{'text6'+ '-' + irepeater1_item}}" style="{{text6[irepeater1_item].style}}" className="{{text6[irepeater1_item].className}}" text="{{text6[irepeater1_item].text}}" maxLines="{{text6[irepeater1_item].maxLines}}" inheritColor="{{text6[irepeater1_item].inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text6[irepeater1_item].text}}</b>
+									</e>
+								</d>
+							</block>
+						</c>
+					</e>
+				</d>
+			</c>
+		</a>
+	</a>
+</a>

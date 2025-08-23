@@ -1,0 +1,42 @@
+<a id="grid1" style="{{grid1.style}};{{style}}" className="wa-comp-block-u_deng_lu {{grid1.className}} {{className}}" gutterX="{{grid1.gutterX}}" gutterY="{{grid1.gutterY}}" template="{{grid1.template}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+	<b id="row1" style="{{row1.style}}" className="{{row1.className}}" alignItems="{{row1.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col1" style="{{col1.style}}" className="{{col1.className}}" alignSelf="{{col1.alignSelf}}" widthType="{{col1.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<d id="radio1" style="{{radio1.style}}" className="{{radio1.className}}" name="{{radio1.name}}" size="{{radio1.size}}" label="{{radio1.label}}" range="{{radio1.range}}" value="{{radio1.value}}" format="{{radio1.format}}" status="{{radio1.status}}" enumName="{{radio1.enumName}}" required="{{radio1.required}}" tipBlock="{{radio1.tipBlock}}" direction="{{radio1.direction}}" borderedH5="{{radio1.borderedH5}}" requiredMsg="{{radio1.requiredMsg}}" requiredFlag="{{radio1.requiredFlag}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="onradio1$change"/>
+		</c>
+	</b>
+	<b id="row2" style="{{row2.style}}" className="{{row2.className}}" alignItems="{{row2.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col2" style="{{col2.style}}" className="{{col2.className}}" alignSelf="{{col2.alignSelf}}" widthType="{{col2.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		<c id="col3" style="{{col3.style}}" className="{{col3.className}}" alignSelf="{{col3.alignSelf}}" widthType="{{col3.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		<c id="col4" style="{{col4.style}}" className="{{col4.className}}" alignSelf="{{col4.alignSelf}}" widthType="{{col4.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		<c id="col5" style="{{col5.style}}" className="{{col5.className}}" alignSelf="{{col5.alignSelf}}" widthType="{{col5.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+	</b>
+	<b id="row4" style="{{row4.style}}" className="{{row4.className}}" alignItems="{{row4.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col7" style="{{col7.style}}" className="{{col7.className}}" alignSelf="{{col7.alignSelf}}" widthType="{{col7.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<e id="input1" style="{{input1.style}}" className="{{input1.className}}" name="{{input1.name}}" label="{{input1.label}}" status="{{input1.status}}" template="{{input1.template}}" prefixIcon="{{input1.prefixIcon}}" prefixType="{{input1.prefixType}}" suffixIcon="{{input1.suffixIcon}}" suffixType="{{input1.suffixType}}" inputValue="{{input1.inputValue}}" placeholder="{{input1.placeholder}}" requiredMsg="{{input1.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		</c>
+	</b>
+	<b id="row3" style="{{row3.style}}" className="{{row3.className}}" alignItems="{{row3.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col6" style="{{col6.style}}" className="{{col6.className}}" alignSelf="{{col6.alignSelf}}" widthType="{{col6.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<f id="button1" style="{{button1.style}}" className="{{button1.className}}" icon="{{button1.icon}}" text="{{button1.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton1$tap">{{button1.text}}</f>
+		</c>
+	</b>
+	<b id="row5" style="{{row5.style}}" className="{{row5.className}}" alignItems="{{row5.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col8" style="{{col8.style}}" className="{{col8.className}}" alignSelf="{{col8.alignSelf}}" widthType="{{col8.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<e id="input2" style="{{input2.style}}" className="{{input2.className}}" name="{{input2.name}}" label="{{input2.label}}" status="{{input2.status}}" template="{{input2.template}}" prefixIcon="{{input2.prefixIcon}}" prefixType="{{input2.prefixType}}" suffixIcon="{{input2.suffixIcon}}" suffixType="{{input2.suffixType}}" inputValue="{{input2.inputValue}}" placeholder="{{input2.placeholder}}" requiredMsg="{{input2.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="oninput2$change"/>
+			<e id="input3" style="{{input3.style}}" className="{{input3.className}}" name="{{input3.name}}" label="{{input3.label}}" status="{{input3.status}}" password="{{input3.password}}" template="{{input3.template}}" prefixIcon="{{input3.prefixIcon}}" prefixType="{{input3.prefixType}}" suffixIcon="{{input3.suffixIcon}}" suffixType="{{input3.suffixType}}" inputValue="{{input3.inputValue}}" placeholder="{{input3.placeholder}}" requiredMsg="{{input3.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="oninput3$change"/>
+			<g id="text1" style="{{text1.style}}" className="{{text1.className}}" text="{{text1.text}}" maxLines="{{text1.maxLines}}" inheritColor="{{text1.inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text1.text}}</g>
+			<f id="button2" style="{{button2.style}}" className="{{button2.className}}" icon="{{button2.icon}}" text="{{button2.text}}" variant="{{button2.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton2$tap">{{button2.text}}</f>
+			<f id="button3" style="{{button3.style}}" className="{{button3.className}}" icon="{{button3.icon}}" text="{{button3.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton3$tap">{{button3.text}}</f>
+		</c>
+	</b>
+	<b id="row6" style="{{row6.style}}" className="{{row6.className}}" alignItems="{{row6.alignItems}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<c id="col9" style="{{col9.style}}" className="{{col9.className}}" alignSelf="{{col9.alignSelf}}" widthType="{{col9.widthType}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<e id="input4" style="{{input4.style}}" className="{{input4.className}}" name="{{input4.name}}" type="{{input4.type}}" label="{{input4.label}}" status="{{input4.status}}" template="{{input4.template}}" maxLength="{{input4.maxLength}}" prefixIcon="{{input4.prefixIcon}}" prefixType="{{input4.prefixType}}" suffixIcon="{{input4.suffixIcon}}" suffixType="{{input4.suffixType}}" inputValue="{{input4.inputValue}}" placeholder="{{input4.placeholder}}" requiredMsg="{{input4.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="oninput4$change"/>
+			<f id="button4" style="{{button4.style}}" className="{{button4.className}}" icon="{{button4.icon}}" text="{{button4.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton4$tap">{{button4.text}}</f>
+			<e id="input5" style="{{input5.style}}" className="{{input5.className}}" name="{{input5.name}}" type="{{input5.type}}" label="{{input5.label}}" status="{{input5.status}}" template="{{input5.template}}" maxLength="{{input5.maxLength}}" prefixIcon="{{input5.prefixIcon}}" prefixType="{{input5.prefixType}}" suffixIcon="{{input5.suffixIcon}}" suffixType="{{input5.suffixType}}" inputValue="{{input5.inputValue}}" placeholder="{{input5.placeholder}}" requiredMsg="{{input5.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="oninput5$change"/>
+			<g id="text2" style="{{text2.style}}" className="{{text2.className}}" text="{{text2.text}}" maxLines="{{text2.maxLines}}" inheritColor="{{text2.inheritColor}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text2.text}}</g>
+			<f id="button5" style="{{button5.style}}" className="{{button5.className}}" icon="{{button5.icon}}" text="{{button5.text}}" variant="{{button5.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton5$tap">{{button5.text}}</f>
+			<f id="button6" style="{{button6.style}}" className="{{button6.className}}" icon="{{button6.icon}}" text="{{button6.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton6$tap">{{button6.text}}</f>
+		</c>
+	</b>
+</a>

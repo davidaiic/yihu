@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "ab_001",
+    "ownerOpenId": "openid_abc",
+    "contactName": "王先生",
+    "mobile": "13800000000",
+    "citystdname": "北京市",
+    "addressLine": "海淀区知春路××号",
+    "doorplate": "A座1203",
+    "geo": {
+      "type": "Point",
+      "coordinates": [ 116.35, 39.97 ]
+    },
+    "isDefault": true,
+    "createdAt": 1755936000000
+  }
+]

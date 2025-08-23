@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CareRecipients",
+  "description": "被照护人档案：与下单人（ownerOpenId）绑定，可在多个订单中复用。",
+  "type": "object",
+  "required": [ "_id", "ownerOpenId", "name", "createdAt" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "ownerOpenId": {
+      "type": "string",
+      "description": "归属用户 openid"
+    },
+    "name": { "type": "string" },
+    "gender": {
+      "type": [ "string", "null" ],
+      "oneOf": [
+        {
+          "const": "M",
+          "description": "男"
+        },
+        {
+          "const": "F",
+          "description": "女"
+        }
+      ]
+    },
+    "age": {
+      "type": [ "integer", "null" ],
+      "minimum": 0
+    },
+    "idMasked": {
+      "type": [ "string", "null" ],
+      "description": "证件号脱敏"
+    },
+    "mobile": { "type": [ "string", "null" ] },
+    "address": { "type": [ "string", "null" ] },
+    "geo": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "notes": { "type": [ "string", "null" ] },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

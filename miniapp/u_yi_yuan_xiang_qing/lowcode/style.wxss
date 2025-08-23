@@ -1,0 +1,10 @@
+.wa-comp-block-u_yi_yuan_xiang_qing {
+  /**
+     * 可以使用theme中定义的 mixin 和 定义变量
+     * 
+     **/
+  /* 在样式 API 或全局 CSS 中添加 */
+}
+.wa-comp-block-u_yi_yuan_xiang_qing .swiper1 .wd-image img {
+  object-fit: cover !important;
+}

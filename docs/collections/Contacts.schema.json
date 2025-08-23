@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contacts",
+  "description": "联系人：与用户有关的联系人记录（非地址薄）。",
+  "type": "object",
+  "required": [ "_id", "ownerOpenId", "name" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "ownerOpenId": { "type": "string" },
+    "name": { "type": "string" },
+    "relation": {
+      "type": [ "string", "null" ],
+      "description": "与用户关系，如家属/朋友/同事"
+    },
+    "mobile": { "type": [ "string", "null" ] },
+    "notes": { "type": [ "string", "null" ] },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

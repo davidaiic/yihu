@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "ra_001",
+    "applicantOpenId": "openid_abc",
+    "targetRole": "caregiver",
+    "attachments": [ "cloud://.../cert1.jpg" ],
+    "status": "pending",
+    "createdAt": 1755936000000
+  }
+]

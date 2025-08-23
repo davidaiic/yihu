@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "bj",
+    "citystdname": "北京市",
+    "status": "active",
+    "center": {
+      "type": "Point",
+      "coordinates": [ 116.40, 39.90 ]
+    },
+    "createdAt": 1755936000000
+  }
+]

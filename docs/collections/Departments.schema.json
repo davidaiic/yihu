@@ -1,0 +1,162 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Departments",
+  "description": "组织树：集团→省→市→（医院→病区→病房→床位）/（居家护理站→居家护理组→居家护理小组）/（陪诊师团队→陪诊组）。",
+  "type": "object",
+  "required": [ "_id", "name", "type", "status" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "name": { "type": "string" },
+    "type": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "country",
+          "description": "集团/总部（国家层）"
+        },
+        {
+          "const": "province",
+          "description": "省/直辖市"
+        },
+        {
+          "const": "city",
+          "description": "地市/直辖市区"
+        },
+        {
+          "const": "hospital",
+          "description": "医院"
+        },
+        {
+          "const": "ward",
+          "description": "病区（护理单元）"
+        },
+        {
+          "const": "room",
+          "description": "病房"
+        },
+        {
+          "const": "bed",
+          "description": "床位"
+        },
+        {
+          "const": "home_station",
+          "description": "居家护理站（城市服务站）"
+        },
+        {
+          "const": "home_group",
+          "description": "居家护理组"
+        },
+        {
+          "const": "home_subgroup",
+          "description": "居家护理小组"
+        },
+        {
+          "const": "accompany_team",
+          "description": "陪诊师团队"
+        },
+        {
+          "const": "accompany_group",
+          "description": "陪诊组"
+        }
+      ]
+    },
+    "parentId": {
+      "type": [ "string", "null" ],
+      "description": "父级ID，根节点为 null"
+    },
+    "path": {
+      "type": [ "string", "null" ],
+      "description": "路径，如 country/province/city/hospital/ward"
+    },
+    "citystdname": { "type": [ "string", "null" ] },
+    "order": {
+      "type": [ "integer", "null" ],
+      "description": "排序"
+    },
+    "status": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "active",
+          "description": "启用"
+        },
+        {
+          "const": "inactive",
+          "description": "停用"
+        }
+      ]
+    },
+    "location": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    },
+    "chain": {
+      "type": "string",
+      "description": "所属业务链：住院(hospital) / 居家(home) / 陪诊(accompany)",
+      "enum": [ "hospital", "home", "accompany" ]
+    }
+  },
+
+  "x-domain-rules": {
+    "noCrossChain": true,
+    "allowedParentByType": {
+      "country": [ null ],
+      "province": [ "country" ],
+      "city": [ "province" ],
+
+      "hospital": [ "city" ],
+      "ward": [ "hospital" ],
+      "room": [ "ward" ],
+      "bed": [ "room" ],
+
+      "home_station": [ "city" ],
+      "home_group": [ "home_station" ],
+      "home_subgroup": [ "home_group" ],
+
+      "accompany_team": [ "city" ],
+      "accompany_group": [ "accompany_team" ]
+    },
+    "chainByType": {
+      "hospital": "hospital",
+      "ward": "hospital",
+      "room": "hospital",
+      "bed": "hospital",
+
+      "home_station": "home",
+      "home_group": "home",
+      "home_subgroup": "home",
+
+      "accompany_team": "accompany",
+      "accompany_group": "accompany"
+    }
+  }
+}

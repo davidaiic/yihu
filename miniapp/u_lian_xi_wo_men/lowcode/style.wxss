@@ -1,0 +1,6 @@
+.wa-comp-block-u_lian_xi_wo_men {
+  /**
+     * 可以使用theme中定义的 mixin 和 定义变量
+     * 
+     **/
+}

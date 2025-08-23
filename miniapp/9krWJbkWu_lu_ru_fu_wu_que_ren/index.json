@@ -1,0 +1,4 @@
+{
+  "component": true,
+  "usingComponents": {"a":"@cloudbase/weda-ui-mp/components/container/index","b":"@cloudbase/weda-ui-mp/components/wd-input/index","c":"@cloudbase/weda-ui-mp/components/wd-button/index","d":"@cloudbase/weda-ui-mp/components/scrollView/index","e":"@cloudbase/weda-ui-mp/components/wd-text/index","f":"@cloudbase/weda-ui-mp/components/wd-icon/index"}
+}

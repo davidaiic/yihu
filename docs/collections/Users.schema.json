@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Users",
+  "description": "用户档案：汇总基础信息与角色、部门关系；护理员画像放在 caregiverProfile。",
+  "type": "object",
+  "required": [ "_id", "openid", "createdAt" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "openid": { "type": "string" },
+    "unionid": { "type": [ "string", "null" ] },
+    "mobile": { "type": [ "string", "null" ] },
+    "nickname": { "type": [ "string", "null" ] },
+    "realname": { "type": [ "string", "null" ] },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "角色key集合（参考 Roles 集合）"
+    },
+    "deptIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "所属部门/团队ID（多选）"
+    },
+    "citystdname": { "type": [ "string", "null" ] },
+    "geo": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "x-tcb-type": "GeoPoint"
+    },
+    "caregiverProfile": {
+      "type": [ "object", "null" ],
+      "properties": {
+        "skills": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "services": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "可提供的 ServiceTemplates.key 列表"
+        },
+        "rating": {
+          "type": [ "number", "null" ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "years": {
+          "type": [ "number", "null" ],
+          "minimum": 0
+        }
+      }
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

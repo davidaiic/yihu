@@ -1,0 +1,93 @@
+<a id="container1" style="{{container1.style}};{{style}}" className="wa-comp-block-u_yi_yuan_pei_zhen_xi {{container1.className}} {{className}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+	<a id="container2" style="{{container2.style}}" className="{{container2.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<a id="container25" style="{{container25.style}}" className="{{container25.className}}" data="{{container25.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<b id="button20" style="{{button20.style}}" className="{{button20.className}}" icon="{{button20.icon}}" text="{{button20.text}}" variant="{{button20.variant}}" iconType="{{button20.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton20$tap">{{button20.text}}</b>
+			<c id="text14" style="{{text14.style}}" className="{{text14.className}}" text="{{text14.text}}" level="{{text14.level}}" maxLines="{{text14.maxLines}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text14.text}}</c>
+		</a>
+		<a id="container3" style="{{container3.style}}" className="{{container3.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text1" style="{{text1.style}}" className="{{text1.className}}" text="{{text1.text}}" level="{{text1.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text1.text}}</c>
+			<a id="container14" style="{{container14.style}}" className="{{container14.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button1" style="{{button1.style}}" className="{{button1.className}}" text="{{button1.text}}" variant="{{button1.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton1$tap">{{button1.text}}</b>
+				<b id="button2" style="{{button2.style}}" className="{{button2.className}}" text="{{button2.text}}" variant="{{button2.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton2$tap">{{button2.text}}</b>
+				<b id="button3" style="{{button3.style}}" className="{{button3.className}}" text="{{button3.text}}" variant="{{button3.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton3$tap">{{button3.text}}</b>
+			</a>
+		</a>
+		<a id="container4" style="{{container4.style}}" className="{{container4.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text2" style="{{text2.style}}" className="{{text2.className}}" text="{{text2.text}}" level="{{text2.level}}" maxLines="{{text2.maxLines}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text2.text}}</c>
+			<d id="input1" style="{{input1.style}}" className="{{input1.className}}" name="{{input1.name}}" label="{{input1.label}}" status="{{input1.status}}" template="{{input1.template}}" prefixIcon="{{input1.prefixIcon}}" prefixType="{{input1.prefixType}}" suffixIcon="{{input1.suffixIcon}}" suffixType="{{input1.suffixType}}" inputValue="{{input1.inputValue}}" placeholder="{{input1.placeholder}}" requiredMsg="{{input1.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<d id="input2" style="{{input2.style}}" className="{{input2.className}}" type="{{input2.type}}" label="{{input2.label}}" status="{{input2.status}}" template="{{input2.template}}" inputValue="{{input2.inputValue}}" prefixIcon="{{input2.prefixIcon}}" prefixType="{{input2.prefixType}}" suffixIcon="{{input2.suffixIcon}}" suffixType="{{input2.suffixType}}" placeholder="{{input2.placeholder}}" requiredMsg="{{input2.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<d id="input3" style="{{input3.style}}" className="{{input3.className}}" type="{{input3.type}}" label="{{input3.label}}" placeholder="{{input3.placeholder}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<d id="input4" style="{{input4.style}}" className="{{input4.className}}" label="{{input4.label}}" placeholder="{{input4.placeholder}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		</a>
+		<a id="container5" style="{{container5.style}}" className="{{container5.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text3" style="{{text3.style}}" className="{{text3.className}}" text="{{text3.text}}" level="{{text3.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text3.text}}</c>
+			<a id="container15" style="{{container15.style}}" className="{{container15.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button4" style="{{button4.style}}" className="{{button4.className}}" text="{{button4.text}}" variant="{{button4.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton4$tap">{{button4.text}}</b>
+				<b id="button5" style="{{button5.style}}" className="{{button5.className}}" text="{{button5.text}}" variant="{{button5.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton5$tap">{{button5.text}}</b>
+				<b id="button6" style="{{button6.style}}" className="{{button6.className}}" text="{{button6.text}}" variant="{{button6.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton6$tap">{{button6.text}}</b>
+				<b id="button7" style="{{button7.style}}" className="{{button7.className}}" text="{{button7.text}}" variant="{{button7.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton7$tap">{{button7.text}}</b>
+			</a>
+		</a>
+		<a id="container6" style="{{container6.style}}" className="{{container6.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text4" style="{{text4.style}}" className="{{text4.className}}" text="{{text4.text}}" level="{{text4.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text4.text}}</c>
+			<a id="container16" style="{{container16.style}}" className="{{container16.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button8" style="{{button8.style}}" className="{{button8.className}}" text="{{button8.text}}" variant="{{button8.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton8$tap">{{button8.text}}</b>
+				<b id="button9" style="{{button9.style}}" className="{{button9.className}}" text="{{button9.text}}" variant="{{button9.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton9$tap">{{button9.text}}</b>
+				<b id="button10" style="{{button10.style}}" className="{{button10.className}}" text="{{button10.text}}" variant="{{button10.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton10$tap">{{button10.text}}</b>
+			</a>
+		</a>
+		<a id="container7" style="{{container7.style}}" className="{{container7.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text5" style="{{text5.style}}" className="{{text5.className}}" text="{{text5.text}}" level="{{text5.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text5.text}}</c>
+			<a id="container17" style="{{container17.style}}" className="{{container17.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button11" style="{{button11.style}}" className="{{button11.className}}" text="{{button11.text}}" variant="{{button11.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton11$tap">{{button11.text}}</b>
+				<b id="button12" style="{{button12.style}}" className="{{button12.className}}" text="{{button12.text}}" variant="{{button12.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton12$tap">{{button12.text}}</b>
+			</a>
+		</a>
+		<a id="container8" style="{{container8.style}}" className="{{container8.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text6" style="{{text6.style}}" className="{{text6.className}}" text="{{text6.text}}" level="{{text6.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text6.text}}</c>
+			<a id="container18" style="{{container18.style}}" className="{{container18.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button13" style="{{button13.style}}" className="{{button13.className}}" text="{{button13.text}}" variant="{{button13.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton13$tap">{{button13.text}}</b>
+				<b id="button14" style="{{button14.style}}" className="{{button14.className}}" text="{{button14.text}}" variant="{{button14.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton14$tap">{{button14.text}}</b>
+			</a>
+		</a>
+		<a id="container9" style="{{container9.style}}" className="{{container9.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text7" style="{{text7.style}}" className="{{text7.className}}" text="{{text7.text}}" level="{{text7.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text7.text}}</c>
+			<b id="button15" style="{{button15.style}}" className="{{button15.className}}" text="{{button15.text}}" variant="{{button15.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{button15.text}}</b>
+			<d id="input5" style="{{input5.style}}" className="{{input5.className}}" label="{{input5.label}}" placeholder="{{input5.placeholder}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<e id="date1" style="{{date1.style}}" className="{{date1.className}}" mode="{{date1.mode}}" name="{{date1.name}}" label="{{date1.label}}" start="{{date1.start}}" value="{{date1.value}}" status="{{date1.status}}" borderedH5="{{date1.borderedH5}}" prefixIcon="{{date1.prefixIcon}}" prefixType="{{date1.prefixType}}" suffixIcon="{{date1.suffixIcon}}" suffixType="{{date1.suffixType}}" placeholder="{{date1.placeholder}}" requiredMsg="{{date1.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<d id="input6" style="{{input6.style}}" className="{{input6.className}}" type="{{input6.type}}" label="{{input6.label}}" status="{{input6.status}}" template="{{input6.template}}" inputValue="{{input6.inputValue}}" prefixIcon="{{input6.prefixIcon}}" prefixType="{{input6.prefixType}}" suffixIcon="{{input6.suffixIcon}}" suffixType="{{input6.suffixType}}" placeholder="{{input6.placeholder}}" requiredMsg="{{input6.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		</a>
+		<a id="container10" style="{{container10.style}}" className="{{container10.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text8" style="{{text8.style}}" className="{{text8.className}}" text="{{text8.text}}" level="{{text8.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text8.text}}</c>
+			<f id="textarea1" style="{{textarea1.style}}" className="{{textarea1.className}}" placeholder="{{textarea1.placeholder}}" labelVisible="{{textarea1.labelVisible}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		</a>
+		<a id="container11" style="{{container11.style}}" className="{{container11.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text9" style="{{text9.style}}" className="{{text9.className}}" text="{{text9.text}}" level="{{text9.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text9.text}}</c>
+			<b id="button16" style="{{button16.style}}" className="{{button16.className}}" icon="{{button16.icon}}" text="{{button16.text}}" variant="{{button16.variant}}" iconType="{{button16.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{button16.text}}</b>
+		</a>
+		<a id="container12" style="{{container12.style}}" className="{{container12.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<g id="switch1" style="{{switch1.style}}" className="{{switch1.className}}" labelVisible="{{switch1.labelVisible}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="onswitch1$change"/>
+			<c id="text10" style="{{text10.style}}" className="{{text10.className}}" text="{{text10.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text10.text}}</c>
+			<b id="button17" style="{{button17.style}}" className="{{button17.className}}" text="{{button17.text}}" variant="{{button17.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{button17.text}}</b>
+		</a>
+		<a id="container21" style="{{container21.style}}" className="{{container21.className}}" data="{{container21.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container22" style="{{container22.style}}" className="{{container22.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<a id="container23" style="{{container23.style}}" className="{{container23.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<h id="icon1" style="{{icon1.style}}" className="{{icon1.className}}" name="{{icon1.name}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+					<c id="text13" style="{{text13.style}}" className="{{text13.className}}" text="{{text13.text}}" level="{{text13.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text13.text}}</c>
+				</a>
+				<a id="container24" style="{{container24.style}}" className="{{container24.className}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			</a>
+		</a>
+		<a id="container13" style="{{container13.style}}" className="{{container13.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container19" style="{{container19.style}}" className="{{container19.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text11" style="{{text11.style}}" className="{{text11.className}}" text="{{text11.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text11.text}}</c>
+				<c id="text12" style="{{text12.style}}" className="{{text12.className}}" text="{{text12.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text12.text}}</c>
+			</a>
+			<a id="container20" style="{{container20.style}}" className="{{container20.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button18" style="{{button18.style}}" className="{{button18.className}}" text="{{button18.text}}" variant="{{button18.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton18$tap">{{button18.text}}</b>
+				<b id="button19" style="{{button19.style}}" className="{{button19.className}}" text="{{button19.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton19$tap">{{button19.text}}</b>
+			</a>
+		</a>
+	</a>
+</a>

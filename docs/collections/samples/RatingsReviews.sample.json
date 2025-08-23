@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "rr_001",
+    "orderId": "o_20250812_001",
+    "caregiverId": "openid_cg1",
+    "raterOpenId": "openid_abc",
+    "score": 5,
+    "tags": [ "沟通顺畅", "专业" ],
+    "content": "服务很好",
+    "createdAt": 1755936000000
+  }
+]

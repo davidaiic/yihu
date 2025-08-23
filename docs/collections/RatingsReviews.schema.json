@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RatingsReviews",
+  "description": "订单后的服务评分与评价（针对护理员/服务）。",
+  "type": "object",
+  "required": [ "_id", "orderId", "raterOpenId", "score", "createdAt" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "orderId": { "type": "string" },
+    "caregiverId": { "type": [ "string", "null" ] },
+    "raterOpenId": { "type": "string" },
+    "score": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "content": { "type": [ "string", "null" ] },
+    "reply": { "type": [ "string", "null" ] },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        { "type": "integer" }
+      ],
+      "x-tcb-type": "Date"
+    }
+  }
+}

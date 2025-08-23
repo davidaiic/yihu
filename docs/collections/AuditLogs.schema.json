@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AuditLogs",
+  "description": "操作审计日志：记录谁在何时对什么资源做了什么操作，以及变更摘要。",
+  "type": "object",
+  "required": [ "_id", "action", "actorId", "createdAt" ],
+  "properties": {
+    "_id": { "type": "string" },
+    "action": {
+      "type": "string",
+      "description": "动作，如 login/create/update/delete/pay"
+    },
+    "actorId": {
+      "type": "string",
+      "description": "触发者用户ID（可用 openid 或内部 userId）"
+    },
+    "actorOpenId": { "type": [ "string", "null" ] },
+    "resource": {
+      "type": "object",
+      "description": "被操作资源",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "资源类型，如 Orders/Departments/Users"
+        },
+        "id": {
+          "type": "string",
+          "description": "资源ID"
+        }
+      }
+    },
+    "changes": {
+      "type": "object",
+      "description": "变更摘要（keys/old/new）"
+    },
+    "ip": { "type": [ "string", "null" ] },
+    "ua": { "type": [ "string", "null" ] },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ],
+      "x-tcb-type": "Date",
+      "description": "创建时间"
+    }
+  }
+}

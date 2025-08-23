@@ -1,0 +1,312 @@
+project: yihu-repo
+version: 1
+entry:
+- README.md
+- docs/OVERVIEW.md
+- docs/INVENTORY.md
+pages:
+  9krWJbkWindex:
+    spec: docs/pages/9krWJbkWindex/spec.md
+    handlers: miniapp/9krWJbkWindex/lowcode/handler/
+    contracts: []
+  9krWJbkWu_cha_kan_hu_li_ri_zh:
+    spec: docs/pages/9krWJbkWu_cha_kan_hu_li_ri_zh/spec.md
+    handlers: miniapp/9krWJbkWu_cha_kan_hu_li_ri_zh/lowcode/handler/
+    contracts: []
+  9krWJbkWu_chuang_jian_gong_xi:
+    spec: docs/pages/9krWJbkWu_chuang_jian_gong_xi/spec.md
+    handlers: miniapp/9krWJbkWu_chuang_jian_gong_xi/lowcode/handler/
+    contracts: []
+  9krWJbkWu_dang_an_xiangqing:
+    spec: docs/pages/9krWJbkWu_dang_an_xiangqing/spec.md
+    handlers: miniapp/9krWJbkWu_dang_an_xiangqing/lowcode/handler/
+    contracts: []
+  9krWJbkWu_dangan_guanli:
+    spec: docs/pages/9krWJbkWu_dangan_guanli/spec.md
+    handlers: miniapp/9krWJbkWu_dangan_guanli/lowcode/handler/
+    contracts: []
+  9krWJbkWu_hu_li_ri_zhi_xiang_:
+    spec: docs/pages/9krWJbkWu_hu_li_ri_zhi_xiang_/spec.md
+    handlers: miniapp/9krWJbkWu_hu_li_ri_zhi_xiang_/lowcode/handler/
+    contracts: []
+  9krWJbkWu_jie_shou_gong_xiang:
+    spec: docs/pages/9krWJbkWu_jie_shou_gong_xiang/spec.md
+    handlers: miniapp/9krWJbkWu_jie_shou_gong_xiang/lowcode/handler/
+    contracts: []
+  9krWJbkWu_lu_ru_fu_wu_que_ren:
+    spec: docs/pages/9krWJbkWu_lu_ru_fu_wu_que_ren/spec.md
+    handlers: miniapp/9krWJbkWu_lu_ru_fu_wu_que_ren/lowcode/handler/
+    contracts: []
+  9krWJbkWu_sao_ma_shen_qing_yi:
+    spec: docs/pages/9krWJbkWu_sao_ma_shen_qing_yi/spec.md
+    handlers: miniapp/9krWJbkWu_sao_ma_shen_qing_yi/lowcode/handler/
+    contracts: []
+  9krWJbkWu_sheng_cheng_fu_wu_q:
+    spec: docs/pages/9krWJbkWu_sheng_cheng_fu_wu_q/spec.md
+    handlers: miniapp/9krWJbkWu_sheng_cheng_fu_wu_q/lowcode/handler/
+    contracts: []
+  LoginPageByOpenId:
+    spec: docs/pages/LoginPageByOpenId/spec.md
+    handlers: miniapp/LoginPageByOpenId/lowcode/handler/
+    contracts:
+    - cloudfunctions/loginByOpenId/README.md
+  u2pk3pmo0pc:
+    spec: docs/pages/u2pk3pmo0pc/spec.md
+    handlers: miniapp/u2pk3pmo0pc/lowcode/handler/
+    contracts:
+    - cloudfunctions/getOrderStatsByOpenId/README.md
+  u_an_ming_zi_cha_zhao:
+    spec: docs/pages/u_an_ming_zi_cha_zhao/spec.md
+    handlers: miniapp/u_an_ming_zi_cha_zhao/lowcode/handler/
+    contracts: []
+  u_bei_zhao_hu_ren_xin:
+    spec: docs/pages/u_bei_zhao_hu_ren_xin/spec.md
+    handlers: miniapp/u_bei_zhao_hu_ren_xin/lowcode/handler/
+    contracts: []
+  u_bei_zhao_hu_ren_xua:
+    spec: docs/pages/u_bei_zhao_hu_ren_xua/spec.md
+    handlers: miniapp/u_bei_zhao_hu_ren_xua/lowcode/handler/
+    contracts:
+    - cloudfunctions/careRecipients/README.md
+  u_cha_zhao_yi_yuan:
+    spec: docs/pages/u_cha_zhao_yi_yuan/spec.md
+    handlers: miniapp/u_cha_zhao_yi_yuan/lowcode/handler/
+    contracts:
+    - cloudfunctions/listHospitals/README.md
+    - cloudfunctions/listHospitalsByNameByOpenId/README.md
+  u_deng_lu:
+    spec: docs/pages/u_deng_lu/spec.md
+    handlers: miniapp/u_deng_lu/lowcode/handler/
+    contracts:
+    - cloudfunctions/login/README.md
+    - cloudfunctions/sendSms/README.md
+  u_ding_dan_A:
+    spec: docs/pages/u_ding_dan_A/spec.md
+    handlers: miniapp/u_ding_dan_A/lowcode/handler/
+    contracts: []
+  u_ding_dan_B:
+    spec: docs/pages/u_ding_dan_B/spec.md
+    handlers: miniapp/u_ding_dan_B/lowcode/handler/
+    contracts: []
+  u_ding_dan_xiang_qing:
+    spec: docs/pages/u_ding_dan_xiang_qing/spec.md
+    handlers: miniapp/u_ding_dan_xiang_qing/lowcode/handler/
+    contracts: []
+  u_ding_dan_xiang_qing_1:
+    spec: docs/pages/u_ding_dan_xiang_qing_1/spec.md
+    handlers: miniapp/u_ding_dan_xiang_qing_1/lowcode/handler/
+    contracts: []
+  u_fu_jin_de_yi_yuan:
+    spec: docs/pages/u_fu_jin_de_yi_yuan/spec.md
+    handlers: miniapp/u_fu_jin_de_yi_yuan/lowcode/handler/
+    contracts:
+    - cloudfunctions/listHospitalsNearbyByOpenId/README.md
+  u_fu_wu_ping_jia_ye:
+    spec: docs/pages/u_fu_wu_ping_jia_ye/spec.md
+    handlers: miniapp/u_fu_wu_ping_jia_ye/lowcode/handler/
+    contracts: []
+  u_ge_ren_xin_xi_bianji:
+    spec: docs/pages/u_ge_ren_xin_xi_bianji/spec.md
+    handlers: miniapp/u_ge_ren_xin_xi_bianji/lowcode/handler/
+    contracts:
+    - cloudfunctions/updateUserProfile/README.md
+  u_gong_zuo_tai:
+    spec: docs/pages/u_gong_zuo_tai/spec.md
+    handlers: miniapp/u_gong_zuo_tai/lowcode/handler/
+    contracts: []
+  u_gong_zuo_wo:
+    spec: docs/pages/u_gong_zuo_wo/spec.md
+    handlers: miniapp/u_gong_zuo_wo/lowcode/handler/
+    contracts: []
+  u_hu_li_ri_zhi:
+    spec: docs/pages/u_hu_li_ri_zhi/spec.md
+    handlers: miniapp/u_hu_li_ri_zhi/lowcode/handler/
+    contracts: []
+  u_jian_kang_dang_an:
+    spec: docs/pages/u_jian_kang_dang_an/spec.md
+    handlers: miniapp/u_jian_kang_dang_an/lowcode/handler/
+    contracts: []
+  u_lian_xi_ren_xuan_ze:
+    spec: docs/pages/u_lian_xi_ren_xuan_ze/spec.md
+    handlers: miniapp/u_lian_xi_ren_xuan_ze/lowcode/handler/
+    contracts:
+    - cloudfunctions/contactsCrud/README.md
+  u_lian_xi_wo_men:
+    spec: docs/pages/u_lian_xi_wo_men/spec.md
+    handlers: miniapp/u_lian_xi_wo_men/lowcode/handler/
+    contracts: []
+  u_peng_you_quan:
+    spec: docs/pages/u_peng_you_quan/spec.md
+    handlers: miniapp/u_peng_you_quan/lowcode/handler/
+    contracts: []
+  u_shou_hu_home:
+    spec: docs/pages/u_shou_hu_home/spec.md
+    handlers: miniapp/u_shou_hu_home/lowcode/handler/
+    contracts:
+    - cloudfunctions/getNearbyStationsByOpenId/README.md
+    - cloudfunctions/listCaregiversByProximity/README.md
+    - cloudfunctions/listCaregiversByType/README.md
+    - cloudfunctions/listHospitals/README.md
+    - cloudfunctions/listHospitalsByNameByOpenId/README.md
+    - cloudfunctions/listHospitalsNearbyByOpenId/README.md
+  u_wei_zhi_shou_quan:
+    spec: docs/pages/u_wei_zhi_shou_quan/spec.md
+    handlers: miniapp/u_wei_zhi_shou_quan/lowcode/handler/
+    contracts:
+    - cloudfunctions/addrCrud/README.md
+  u_wen_zhang_xiang_qin:
+    spec: docs/pages/u_wen_zhang_xiang_qin/spec.md
+    handlers: miniapp/u_wen_zhang_xiang_qin/lowcode/handler/
+    contracts: []
+  u_yi_hu_yuan_detail:
+    spec: docs/pages/u_yi_hu_yuan_detail/spec.md
+    handlers: miniapp/u_yi_hu_yuan_detail/lowcode/handler/
+    contracts: []
+  u_yi_liao_hu_li_yuan:
+    spec: docs/pages/u_yi_liao_hu_li_yuan/spec.md
+    handlers: miniapp/u_yi_liao_hu_li_yuan/lowcode/handler/
+    contracts:
+    - cloudfunctions/getHomeNursingServiceList/README.md
+    - cloudfunctions/getSMHLServiceItembycity/README.md
+  u_yi_yuan_pei_zhen_xi:
+    spec: docs/pages/u_yi_yuan_pei_zhen_xi/spec.md
+    handlers: miniapp/u_yi_yuan_pei_zhen_xi/lowcode/handler/
+    contracts: []
+  u_yi_yuan_xiang_qing:
+    spec: docs/pages/u_yi_yuan_xiang_qing/spec.md
+    handlers: miniapp/u_yi_yuan_xiang_qing/lowcode/handler/
+    contracts: []
+  u_yue_sao_shang_men:
+    spec: docs/pages/u_yue_sao_shang_men/spec.md
+    handlers: miniapp/u_yue_sao_shang_men/lowcode/handler/
+    contracts: []
+  u_zhu_yuan_hu_li:
+    spec: docs/pages/u_zhu_yuan_hu_li/spec.md
+    handlers: miniapp/u_zhu_yuan_hu_li/lowcode/handler/
+    contracts:
+    - cloudfunctions/createOrderByOpenId/README.md
+    - cloudfunctions/getZYHLServiceItem/README.md
+    - cloudfunctions/listDepartmentsByParentByOpenId/README.md
+    - cloudfunctions/wxpayBedCareOrder/README.md
+  ucjw5kfasw9:
+    spec: docs/pages/ucjw5kfasw9/spec.md
+    handlers: miniapp/ucjw5kfasw9/lowcode/handler/
+    contracts: []
+functions:
+- name: addrCrud
+  path: cloudfunctions/addrCrud/README.md
+- name: careRecipients
+  path: cloudfunctions/careRecipients/README.md
+- name: contactsCrud
+  path: cloudfunctions/contactsCrud/README.md
+- name: createOrderByOpenId
+  path: cloudfunctions/createOrderByOpenId/README.md
+- name: getHomeNursingServiceList
+  path: cloudfunctions/getHomeNursingServiceList/README.md
+- name: getNearbyStationsByOpenId
+  path: cloudfunctions/getNearbyStationsByOpenId/README.md
+- name: getOrderStatsByOpenId
+  path: cloudfunctions/getOrderStatsByOpenId/README.md
+- name: getSMHLServiceItembycity
+  path: cloudfunctions/getSMHLServiceItembycity/README.md
+- name: getZYHLServiceItem
+  path: cloudfunctions/getZYHLServiceItem/README.md
+- name: listCaregiversByProximity
+  path: cloudfunctions/listCaregiversByProximity/README.md
+- name: listCaregiversByType
+  path: cloudfunctions/listCaregiversByType/README.md
+- name: listDepartmentsByParentByOpenId
+  path: cloudfunctions/listDepartmentsByParentByOpenId/README.md
+- name: listHospitals
+  path: cloudfunctions/listHospitals/README.md
+- name: listHospitalsByNameByOpenId
+  path: cloudfunctions/listHospitalsByNameByOpenId/README.md
+- name: listHospitalsNearbyByOpenId
+  path: cloudfunctions/listHospitalsNearbyByOpenId/README.md
+- name: login
+  path: cloudfunctions/login/README.md
+- name: loginByOpenId
+  path: cloudfunctions/loginByOpenId/README.md
+- name: sendSms
+  path: cloudfunctions/sendSms/README.md
+- name: updateUserProfile
+  path: cloudfunctions/updateUserProfile/README.md
+- name: wxpayBedCareOrder
+  path: cloudfunctions/wxpayBedCareOrder/README.md
+collections:
+  AccompanimentScopes.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/AccompanimentScopes.sample.json
+  AccompanimentScopes.schema:
+    schema: D:/repos/yihu-repo/docs/collections/AccompanimentScopes.schema.json
+  AuditLogs.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/AuditLogs.sample.json
+  AuditLogs.schema:
+    schema: D:/repos/yihu-repo/docs/collections/AuditLogs.schema.json
+  CareRecipients.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/CareRecipients.sample.json
+  CareRecipients.schema:
+    schema: D:/repos/yihu-repo/docs/collections/CareRecipients.schema.json
+  CaregiverSearchIndex.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/CaregiverSearchIndex.sample.json
+  CaregiverSearchIndex.schema:
+    schema: D:/repos/yihu-repo/docs/collections/CaregiverSearchIndex.schema.json
+  Contacts.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/Contacts.sample.json
+  Contacts.schema:
+    schema: D:/repos/yihu-repo/docs/collections/Contacts.schema.json
+  Departments.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/Departments.sample.json
+  Departments.schema:
+    schema: D:/repos/yihu-repo/docs/collections/Departments.schema.json
+  HomeNursingCities.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/HomeNursingCities.sample.json
+  HomeNursingCities.schema:
+    schema: D:/repos/yihu-repo/docs/collections/HomeNursingCities.schema.json
+  HospitalServiceItems.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/HospitalServiceItems.sample.json
+  HospitalServiceItems.schema:
+    schema: D:/repos/yihu-repo/docs/collections/HospitalServiceItems.schema.json
+  Orders.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/Orders.sample.json
+  Orders.schema:
+    schema: D:/repos/yihu-repo/docs/collections/Orders.schema.json
+  Permissions.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/Permissions.sample.json
+  Permissions.schema:
+    schema: D:/repos/yihu-repo/docs/collections/Permissions.schema.json
+  RatingsReviews.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/RatingsReviews.sample.json
+  RatingsReviews.schema:
+    schema: D:/repos/yihu-repo/docs/collections/RatingsReviews.schema.json
+  RoleApplications.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/RoleApplications.sample.json
+  RoleApplications.schema:
+    schema: D:/repos/yihu-repo/docs/collections/RoleApplications.schema.json
+  Roles.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/Roles.sample.json
+  Roles.schema:
+    schema: D:/repos/yihu-repo/docs/collections/Roles.schema.json
+  SchedulesAvailability.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/SchedulesAvailability.sample.json
+  SchedulesAvailability.schema:
+    schema: D:/repos/yihu-repo/docs/collections/SchedulesAvailability.schema.json
+  ServiceAssignments.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/ServiceAssignments.sample.json
+  ServiceAssignments.schema:
+    schema: D:/repos/yihu-repo/docs/collections/ServiceAssignments.schema.json
+  ServiceTemplates.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/ServiceTemplates.sample.json
+  ServiceTemplates.schema:
+    schema: D:/repos/yihu-repo/docs/collections/ServiceTemplates.schema.json
+  ServiceTypes.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/ServiceTypes.sample.json
+  ServiceTypes.schema:
+    schema: D:/repos/yihu-repo/docs/collections/ServiceTypes.schema.json
+  Users.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/Users.sample.json
+  Users.schema:
+    schema: D:/repos/yihu-repo/docs/collections/Users.schema.json
+  address_book.sample:
+    sample: D:/repos/yihu-repo/docs/collections/samples/address_book.sample.json
+  address_book.schema:
+    schema: D:/repos/yihu-repo/docs/collections/address_book.schema.json

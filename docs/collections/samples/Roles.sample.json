@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "r_user",
+    "key": "user",
+    "name": "普通用户",
+    "inherits": [],
+    "permissions": [ "order.create" ]
+  },
+  {
+    "_id": "r_caregiver",
+    "key": "caregiver",
+    "name": "医疗护理员",
+    "inherits": [ "user" ],
+    "permissions": []
+  }
+]

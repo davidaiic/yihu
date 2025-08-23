@@ -1,0 +1,21 @@
+{
+  "name": "@function/getSMHLServiceItembycity",
+  "description": "获取 openid 云函数示例",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tcb cloudfunction run -w",
+    "deploy": "tcb cloudfunction deploy",
+    "tcb-ff": "tcb-ff"
+  },
+  "dependencies": {
+    "wx-server-sdk": "3.0.1",
+    "@cloudbase/node-sdk": "^3.7.0"
+  },
+  "tcbRepo": {
+    "type": "function"
+  },
+  "devDependencies": {
+    "@cloudbase/functions-framework": "^1.8.0"
+  }
+}

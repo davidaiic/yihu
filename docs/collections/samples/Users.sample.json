@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "openid_abc",
+    "openid": "openid_abc",
+    "mobile": "13800000000",
+    "roles": [ "user" ],
+    "deptIds": [],
+    "caregiverProfile": null,
+    "createdAt": 1755936000000
+  }
+]

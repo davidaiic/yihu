@@ -1,0 +1,21 @@
+
+  @import  'lowcode/style.wxss';
+
+.ai-generate-wrapper{--wd-font-base:14px;--wd-font-size-default:14px;font-size:14px;font-family:--apple-system- var(--wd-font-family)}.ai-generate-wrapper view,.ai-generate-wrapper div,.ai-generate-wrapper button{box-sizing:border-box;border-width:0;border-style:solid;border-color:currentColor}.ai-generate-wrapper button.wd-btn--outline{border-width:1px}.ai-generate-wrapper button.wd-btn,.ai-generate-wrapper button.wd-btn:hover:not(.is-disabled){color:inherit;background-color:transparent;background-image:none}
+#wd-page-root .wd-comp-id-card1 .wd-card__header{}
+#wd-page-root .wd-comp-id-card1 .wd-card__{}
+#wd-page-root .wd-comp-id-tag1 .wd-tag-item{font-size:var(--wd-tag-font-size-md)}
+#wd-page-root .wd-comp-id-button1 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button1{font-size:14px}}
+#wd-page-root .wd-comp-id-card2 .wd-card__header{}
+#wd-page-root .wd-comp-id-card2 .wd-card__{}
+#wd-page-root .wd-comp-id-textarea1.wd-form-item{padding:0}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-item-wrap{height:initial;border-bottom:initial}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-item-wrap__control{display:flex;padding:0}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-item-wrap__control-wrap{width:100%;min-height:initial}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-input-wrap:hover:not(.is-disabled),#wd-page-root .wd-comp-id-textarea1 .wd-form-input-wrap:active{border-color:var(--wd-form-input-wrap-border-hover);background-color:var(--wd-form-input-wrap-bg-hover)}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-input-wrap{border:1px solid var(--wd-form-input-wrap-border-default);color:inherit;border-radius:var(--wd-form-input-wrap-border-radius);padding:var(--wd-form-input-wrap-padding);font-size:14px}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-item-wrap__label{width:4em;font-size:14px;padding:0;margin-right:calc(var(--wd-form-item-label-mr) / 2)}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-item-wrap .is-nowrap.wd-form-item-wrap__label>label{line-height:var(--wd-form-item-label-height-md)}
+#wd-page-root .wd-comp-id-textarea1 input::placeholder,#wd-page-root .wd-comp-id-textarea1 .weui-input__placeholder{color:currentColor;opacity:.7}
+#wd-page-root .wd-comp-id-textarea1 .wd-form-input-wrap{border-width:0 }
+#wd-page-root .wd-comp-id-button2 .wd-btn--base{border-width:0}@media (max-width:768px){#wd-page-root .wd-comp-id-button2{font-size:14px}}

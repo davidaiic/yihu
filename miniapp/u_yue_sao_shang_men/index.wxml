@@ -1,0 +1,83 @@
+<a id="container1" style="{{container1.style}};{{style}}" className="wa-comp-block-u_yue_sao_shang_men {{container1.className}} {{className}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+	<a id="container2" style="{{container2.style}}" className="{{container2.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+		<a id="container24" style="{{container24.style}}" className="{{container24.className}}" data="{{container24.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<b id="button9" style="{{button9.style}}" className="{{button9.className}}" icon="{{button9.icon}}" text="{{button9.text}}" variant="{{button9.variant}}" iconType="{{button9.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton9$tap">{{button9.text}}</b>
+			<c id="text21" style="{{text21.style}}" className="{{text21.className}}" text="{{text21.text}}" level="{{text21.level}}" maxLines="{{text21.maxLines}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text21.text}}</c>
+		</a>
+		<a id="container3" style="{{container3.style}}" className="{{container3.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text1" style="{{text1.style}}" className="{{text1.className}}" text="{{text1.text}}" level="{{text1.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text1.text}}</c>
+			<a id="container8" style="{{container8.style}}" className="{{container8.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="button2" style="{{button2.style}}" className="{{button2.className}}" text="{{button2.text}}" variant="{{button2.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton2$tap">{{button2.text}}</b>
+				<b id="button3" style="{{button3.style}}" className="{{button3.className}}" text="{{button3.text}}" variant="{{button3.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton3$tap">{{button3.text}}</b>
+			</a>
+			<a id="container9" style="{{container9.style}}" className="{{container9.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text2" style="{{text2.style}}" className="{{text2.className}}" text="{{text2.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text2.text}}</c>
+				<a id="container10" style="{{container10.style}}" className="{{container10.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<b id="button4" style="{{button4.style}}" className="{{button4.className}}" icon="{{button4.icon}}" variant="{{button4.variant}}" iconType="{{button4.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton4$tap"/>
+					<c id="text3" style="{{text3.style}}" className="{{text3.className}}" text="{{text3.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text3.text}}</c>
+					<b id="button5" style="{{button5.style}}" className="{{button5.className}}" icon="{{button5.icon}}" variant="{{button5.variant}}" iconType="{{button5.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton5$tap"/>
+				</a>
+			</a>
+		</a>
+		<a id="container4" style="{{container4.style}}" className="{{container4.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text4" style="{{text4.style}}" className="{{text4.className}}" text="{{text4.text}}" level="{{text4.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text4.text}}</c>
+			<d id="input1" style="{{input1.style}}" className="{{input1.className}}" label="{{input1.label}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<d id="input2" style="{{input2.style}}" className="{{input2.className}}" label="{{input2.label}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<d id="input3" style="{{input3.style}}" className="{{input3.className}}" label="{{input3.label}}" status="{{input3.status}}" template="{{input3.template}}" inputValue="{{input3.inputValue}}" prefixIcon="{{input3.prefixIcon}}" prefixType="{{input3.prefixType}}" suffixIcon="{{input3.suffixIcon}}" suffixType="{{input3.suffixType}}" placeholder="{{input3.placeholder}}" requiredMsg="{{input3.requiredMsg}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+		</a>
+		<a id="container21" style="{{container21.style}}" className="{{container21.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container22" style="{{container22.style}}" className="{{container22.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text19" style="{{text19.style}}" className="{{text19.className}}" text="{{text19.text}}" level="{{text19.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text19.text}}</c>
+				<a id="container23" style="{{container23.style}}" className="{{container23.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<c id="text20" style="{{text20.style}}" className="{{text20.className}}" text="{{text20.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text20.text}}</c>
+					<b id="button8" style="{{button8.style}}" className="{{button8.className}}" icon="{{button8.icon}}" variant="{{button8.variant}}" iconType="{{button8.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+				</a>
+			</a>
+		</a>
+		<a id="container5" style="{{container5.style}}" className="{{container5.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text5" style="{{text5.style}}" className="{{text5.className}}" text="{{text5.text}}" level="{{text5.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text5.text}}</c>
+			<a id="container11" style="{{container11.style}}" className="{{container11.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<a id="container13" style="{{container13.style}}" className="{{container13.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<e id="icon1" style="{{icon1.style}}" className="{{icon1.className}}" name="{{icon1.name}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+					<c id="text6" style="{{text6.style}}" className="{{text6.className}}" text="{{text6.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text6.text}}</c>
+				</a>
+				<b id="button6" style="{{button6.style}}" className="{{button6.className}}" icon="{{button6.icon}}" variant="{{button6.variant}}" iconType="{{button6.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton6$tap"/>
+			</a>
+			<a id="container12" style="{{container12.style}}" className="{{container12.className}}" data="{{container12.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<a id="container14" style="{{container14.style}}" className="{{container14.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<e id="icon2" style="{{icon2.style}}" className="{{icon2.className}}" name="{{icon2.name}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+					<c id="text7" style="{{text7.style}}" className="{{text7.className}}" text="{{text7.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text7.text}}</c>
+				</a>
+				<b id="button7" style="{{button7.style}}" className="{{button7.className}}" icon="{{button7.icon}}" variant="{{button7.variant}}" iconType="{{button7.iconType}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton7$tap"/>
+			</a>
+		</a>
+		<a id="container6" style="{{container6.style}}" className="{{container6.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container15" style="{{container15.style}}" className="{{container15.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text9" style="{{text9.style}}" className="{{text9.className}}" text="{{text9.text}}" level="{{text9.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text9.text}}</c>
+				<f id="switch1" style="{{switch1.style}}" className="{{switch1.className}}" labelVisible="{{switch1.labelVisible}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="onswitch1$change"/>
+			</a>
+			<c id="text8" style="{{text8.style}}" className="{{text8.className}}" text="{{text8.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text8.text}}</c>
+		</a>
+		<a id="container7" style="{{container7.style}}" className="{{container7.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<c id="text10" style="{{text10.style}}" className="{{text10.className}}" text="{{text10.text}}" level="{{text10.level}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text10.text}}</c>
+			<a id="container16" style="{{container16.style}}" className="{{container16.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text11" style="{{text11.style}}" className="{{text11.className}}" text="{{text11.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text11.text}}</c>
+				<c id="text12" style="{{text12.style}}" className="{{text12.className}}" text="{{text12.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text12.text}}</c>
+			</a>
+			<a id="container17" style="{{container17.style}}" className="{{container17.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text13" style="{{text13.style}}" className="{{text13.className}}" text="{{text13.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text13.text}}</c>
+				<c id="text14" style="{{text14.style}}" className="{{text14.className}}" text="{{text14.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text14.text}}</c>
+			</a>
+			<a id="container18" style="{{container18.style}}" className="{{container18.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text15" style="{{text15.style}}" className="{{text15.className}}" text="{{text15.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text15.text}}</c>
+				<c id="text16" style="{{text16.style}}" className="{{text16.className}}" text="{{text16.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text16.text}}</c>
+			</a>
+			<a id="container19" style="{{container19.style}}" className="{{container19.className}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			<a id="container20" style="{{container20.style}}" className="{{container20.className}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="text17" style="{{text17.style}}" className="{{text17.className}}" text="{{text17.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text17.text}}</c>
+				<c id="text18" style="{{text18.style}}" className="{{text18.className}}" text="{{text18.text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text18.text}}</c>
+			</a>
+		</a>
+		<b id="button1" style="{{button1.style}}" className="{{button1.className}}" text="{{button1.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton1$tap">{{button1.text}}</b>
+	</a>
+</a>

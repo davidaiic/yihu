@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "al_20250823_0001",
+    "action": "login",
+    "actorId": "openid_abc",
+    "resource": {
+      "type": "Users",
+      "id": "openid_abc"
+    },
+    "ip": "203.0.113.9",
+    "ua": "WeChat/8.0 MiniProgram",
+    "createdAt": 1755936000000
+  }
+]
