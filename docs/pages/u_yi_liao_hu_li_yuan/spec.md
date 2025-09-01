@@ -1,71 +1,41 @@
-# 页面规范：u_yi_liao_hu_li_yuan
+# u_yi_liao_hu_li_yuan / spec (KEEP)
 
-## 1. Meta
-- 页面 ID：u_yi_liao_hu_li_yuan
-- 作用/目标：<TODO>
-- 权限：<TODO>
+state: {
+  city: "",
+  location: [], // [lng,lat] of PATIENT
+  servicesPreview: [],
+  selectedService: null, // { serviceItemId, ownerDeptId, unitPrice, iconUrl, name }
+  planId: "plan_weekly_3x_2h",
+  scheduleMode: "now" | "later",
+  dispatchMode: "platform" | "caregiver",
+  selectedCaregiverId: "",
+  selectedDate: "",
+  selectedSlots: [],
+  hold: { holdId:"", expiresAt:0 }
+}
 
-## 2. 组件树 / 绑定
-<!--doc:keep:component-tree-->
-在这里补充组件树、关键绑定表达式（可暂时留空）
-<!--/doc:keep:component-tree-->
-<!--doc:auto:bindings-->
-- （未发现绑定表达式）
-<!--/doc:auto:bindings-->
+UX:
+1) onLoadFetchServices(): 4-card preview; if no location or city not supported → pick city
+2) Tap card → selectedService → collapse preview → show chosen service card
+3) Choose plan (single/month/year), schedule-now or schedule-later
+4) schedule-now → select date → listAvailability → pick 8 consecutive slots → holdSlots → countdown → confirmAppointments
+5) schedule-later → submit order only → create DispatchTask (leader assigns caregiver & times later)
 
-## 3. 事件与 handlers
-<!--doc:auto:handlers-->
-- `confirmOrder(e)`
-- `function1(e)`
-- `goToLocationAuth(e)`
-- `handleCityChange(e)`
-- `loadServices(e)`
-- `navigateToCreate(e)`
-- `navigateToEdit(e)`
-- `navigateToNearby(e)`
-- `navigateToSearch(e)`
-- `onLoadFetchServices(e)`
-- `onPageLoad(e)`
-- `onPageShow(e)`
-- `searchByName(e)`
-- `searchNearby(e)`
-- `selectMethod(e)`
-- `selectOption(e)`
-- `selectPayment(e)`
-- `selectService(e)`
-<!--/doc:auto:handlers-->
-<!--doc:keep:handlers-notes-->
-在这里补充 handlers 之间的协作与副作用说明（可暂时留空）
-<!--/doc:keep:handlers-notes-->
+Validation:
+- schedule-now: selectedSlots.length===8 and consecutive
+- No cross-department: selectedService.ownerDeptId must belong to same chain
 
-## 4. 依赖云函数（自动扫描）
-<!--doc:auto:cloudfunctions-->
-- `getHomeNursingServiceList`
-- `getSMHLServiceItembycity`
-<!--/doc:auto:cloudfunctions-->
-<!--doc:keep:cf-notes-->
-在这里备注云函数的入参/出参差异、错误码等（可暂时留空）
-<!--/doc:keep:cf-notes-->
+Handlers:
+- onLoadFetchServices, onTapMoreServices, onSelectService
+- onChangePlan, onChangeScheduleMode, onToggleDispatchMode
+- onSelectCaregiver, onSelectDate, onQueryAvailability
+- onSelectSlot, onHoldSlots, onConfirmAppointments, onCancelHold
 
-## 5. 可能用到的数据集合（静态分析猜测）
-<!--doc:auto:collections-guess-->
-- （未检测到集合引用）
-<!--/doc:auto:collections-guess-->
-<!--doc:keep:collections-notes-->
-在这里说明字段意义/索引/唯一约束（可暂时留空）
-<!--/doc:keep:collections-notes-->
+Expressions:
+1) Disable nearby if no location:
+!$w.app?.dataset?.state?.location || $w.app.dataset.state.location.length !== 2
 
-## 6. 状态（State）
-<!--doc:keep:state-->
-在这里描述 $page.state / $w.app.state，派生状态计算规则（可暂时留空）
-<!--/doc:keep:state-->
-
-## 7. UX / 校验 / 导航
-<!--doc:keep:ux-->
-在这里描述正常/异常流、校验规则、跳转路径（可暂时留空）
-<!--/doc:keep:ux-->
-
-## 8. 变更记录
-<!--doc:keep:changelog-->
-- 2025-08-xx: 初稿
-<!--/doc:keep:changelog-->
+2) Disable confirm if not 8-consecutive:
+(() => {const a=$page?.dataset?.state?.selectedSlots||[]; if(a.length!==8)return true;
+ const m=t=>{const [h,mm]=t.split(':').map(Number);return h*60+mm};
+ const b=[...a].sort(); for(let i=1;i<b.length;i++){ if(m(b[i])-m(b[i-1])!==15) return true;} return false;})()

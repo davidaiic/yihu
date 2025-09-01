@@ -88,3 +88,18 @@ cloudfunctions/<fn>/
   - 接收 `idempotencyKey`、`ttlSec`（默认 600）
   - 校验唯一键冲突 → 返回 `1001`
   - 过期自动清理（定时器或查询时惰性清理）
+
+## 9. Scheduling UI/State Patterns
+- Manage state with $w.app / $page only; no WeDa data containers.
+- Return shape from all cloud calls: {code, data?, message?}.
+- Hold countdown: call cancelHold() on expiry to avoid stale locks.
+- City/geo fallback: if no patient.location, use patient.citystdname.
+
+## 10. WeDa Repeater Pattern
+- Pass current item via handler param expression:
+  ({ targetXXX: $w.item_repeater1 })
+- In handler:
+  export default async function({ event, data }) {
+    const { _id } = data.target.targetXXX;
+    if (!_id) { $w.utils.showToast({ title:'没有 ID', icon:'error' }); return; }
+  }

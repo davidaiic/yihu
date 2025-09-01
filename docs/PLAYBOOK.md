@@ -79,3 +79,11 @@
 ## 5) 近期里程碑
 - `docs/domain/scheduling/` 首版五件套（Availability / SlotHolds / Appointments / Plans / Transitions）
 - 打通 **居家护理下单（u_yi_liao_hu_li_yuan）**：选时段 → 占位 → 支付 → 接单
+
+
+## 6) Scheduling Playbook Addendum
+- Slot key: _id = caregiverId#date#time
+- Hold TTL: ~10m; expired holds/locks cleaned by cron
+- Generation window: Availability 30 days rolling
+- Archive: Appointments >90d; Availability < today
+- VIP priority: apply VIP → coupon → cash
