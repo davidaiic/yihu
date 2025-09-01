@@ -1,4 +1,4 @@
-// cloudfunctions/migrate-location-to-location/index.js
+// cloudfunctions/migrate-geo-to-location/index.js
 const tcb = require('@cloudbase/node-sdk');
 const app = tcb.init({ env: process.env.TCB_ENV || process.env.SCF_NAMESPACE });
 const db = app.database();
@@ -31,14 +31,14 @@ async function migrateCollection(col, fallbackById = {}) {
 
         for (const doc of data) {
             const hasLocation = !!doc.location;
-            const geoCoords = pickCoords(doc.location);
+            const geoCoords = pickCoords(doc.geo);
             const locCoords = pickCoords(doc.location);
             let coords = null;
 
             if (hasLocation && locCoords) {
-                // 已有合法 location，跳过；若想顺手删除 location，可打开下一句
-                if (doc.location) {
-                    await db.collection(col).doc(doc._id).update({ location: _.remove(), updatedAt: Date.now() });
+                // 已有合法 location，跳过；若想顺手删除 geo，可打开下一句
+                if (doc.geo) {
+                    await db.collection(col).doc(doc._id).update({ geo: _.remove(), updatedAt: Date.now() });
                 }
                 continue;
             }
@@ -49,7 +49,7 @@ async function migrateCollection(col, fallbackById = {}) {
             if (coords && Array.isArray(coords) && coords.length === 2) {
                 await db.collection(col).doc(doc._id).update({
                     location: new db.Geo.Point(coords[0], coords[1]),
-                    location: _.remove(),
+                    geo: _.remove(),
                     updatedAt: Date.now()
                 });
                 updated++;
@@ -61,7 +61,7 @@ async function migrateCollection(col, fallbackById = {}) {
 }
 
 exports.main = async () => {
-    // 如需给老站点兜底坐标（只在该文档没有 location/location 时才会用）
+    // 如需给老站点兜底坐标（只在该文档没有 geo/location 时才会用）
     const fallbackStations = {
         'home_station_1753533327784_2639': [116.26549220734684, 39.92329522049079],
         'home_station_1753533342853_7444': [121.45577802231169, 31.25913998308513]

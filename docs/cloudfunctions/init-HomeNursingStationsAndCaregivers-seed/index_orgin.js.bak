@@ -81,13 +81,13 @@ exports.main = async (event) => {
     }
     // Add new stations for Huilongguan & Xinzhuang
     stations.push(
-      { _id:'home_station_bj_hlg', name:'北京居家护理站·回龙观', citystdname:'北京市', location:new db.Geo.Point(116.34,40.07), _type:'Department', deptType:'home_station', status:'active' },
-      { _id:'home_station_sh_xz', name:'上海居家护理站·莘庄', citystdname:'上海市', location:new db.Geo.Point(121.38,31.11), _type:'Department', deptType:'home_station', status:'active' }
+      { _id:'home_station_bj_hlg', name:'北京居家护理站·回龙观', citystdname:'北京市', geo:new db.Geo.Point(116.34,40.07), _type:'Department', deptType:'home_station', status:'active' },
+      { _id:'home_station_sh_xz', name:'上海居家护理站·莘庄', citystdname:'上海市', geo:new db.Geo.Point(121.38,31.11), _type:'Department', deptType:'home_station', status:'active' }
     );
 
     // Upsert all stations (if two imported ones exist, their original fields are kept and only status enforced)
     for (const s of stations) {
-      const base = { _type:'Department', deptType:'home_station', name:s.name, citystdname:s.citystdname, location:s.location, status: s.status || 'active' };
+      const base = { _type:'Department', deptType:'home_station', name:s.name, citystdname:s.citystdname, geo:s.geo, status: s.status || 'active' };
       await backupUpsertById('Departments', s._id, base, runId);
       res.departments++;
       // Ensure basic home_group/home_subgroup structure
@@ -110,7 +110,7 @@ exports.main = async (event) => {
         const userDoc = { _id: uid, _type:'User', name:`${s.name.replace('居家护理站','护理员')}${i}`, gender: i%2===0?'F':'M', assignments:[{ deptId: assignmentDept, roleId:'Caregiver' }], avatar_url:'', status:'active' };
         await backupUpsertById('Users', uid, userDoc, runId);
         res.users++;
-        caregivers.push({ uid, deptId: assignmentDept, stationId: s._id, citystdname: s.citystdname, location: s.location });
+        caregivers.push({ uid, deptId: assignmentDept, stationId: s._id, citystdname: s.citystdname, geo: s.geo });
       }
     }
 
@@ -140,7 +140,7 @@ exports.main = async (event) => {
         const existing = await db.collection('HospitalServiceItems').where({ _id: `${s._id}_${t._id}` }).get();
         let unitPrice = (priceMap[t.typeCode] || { per_visit: 100 });
         if (existing.data && existing.data.length && existing.data[0].unitPrice) unitPrice = existing.data[0].unitPrice;
-        const doc = { _id: `${s._id}_${t._id}`, _type:'HospitalItem', ownerDeptId: s._id, citystdname: s.citystdname, templateId: t._id, name: t.name, status:'active', unitPrice, enabledBilling: Object.keys(unitPrice), iconUrl: t.iconUrl || null, location: s.location };
+        const doc = { _id: `${s._id}_${t._id}`, _type:'HospitalItem', ownerDeptId: s._id, citystdname: s.citystdname, templateId: t._id, name: t.name, status:'active', unitPrice, enabledBilling: Object.keys(unitPrice), iconUrl: t.iconUrl || null, geo: s.geo };
         await backupUpsertById('HospitalServiceItems', doc._id, doc, runId);
         res.serviceItems++;
       }
@@ -188,7 +188,7 @@ exports.main = async (event) => {
     // CaregiverSearchIndex
     for (const cg of caregivers) {
       const mySvc = allTplIds.map(tid => `${cg.stationId}_${tid}`);
-      const doc = { caregiverId: cg.uid, ownerDeptId: cg.stationId, leafDeptId: cg.deptId, citystdname: cg.citystdname, location: cg.location, services: mySvc, updatedAt: now() };
+      const doc = { caregiverId: cg.uid, ownerDeptId: cg.stationId, leafDeptId: cg.deptId, citystdname: cg.citystdname, geo: cg.geo, services: mySvc, updatedAt: now() };
       const c = db.collection('CaregiverSearchIndex');
       const where = { caregiverId: cg.uid, ownerDeptId: cg.stationId };
       const { data: existed } = await c.where(where).get();

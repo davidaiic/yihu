@@ -93,7 +93,7 @@ cloudfunctions/<fn>/
 - Manage state with $w.app / $page only; no WeDa data containers.
 - Return shape from all cloud calls: {code, data?, message?}.
 - Hold countdown: call cancelHold() on expiry to avoid stale locks.
-- City/location fallback: if no patient.location, use patient.citystdname.
+- City/geo fallback: if no patient.location, use patient.citystdname.
 
 ## 10. WeDa Repeater Pattern
 - Pass current item via handler param expression:

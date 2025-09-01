@@ -18,7 +18,7 @@
 5) 读取 `ServiceTemplates`（11 项必须已存在）；为**每个站点**挂载所有模板成为 `HospitalServiceItems`。
 6) 为每名护理员创建 `ServiceAssignments`：覆盖 **全部 11 项**（serviceItemId 指向“站点+模板”的 HSI），并记录 `leafDeptId` 为护理员归属小组。
 7) 为每名护理员生成未来 30 天的 `SchedulesAvailability`（工作日），**随机班次**（day/full_day/night），按 15 分钟切片。
-8) 构建 `CaregiverSearchIndex`：包含 `caregiverId/ownerDeptId(站点)/leafDeptId(小组)/citystdname/location/services[]`。
+8) 构建 `CaregiverSearchIndex`：包含 `caregiverId/ownerDeptId(站点)/leafDeptId(小组)/citystdname/geo/services[]`。
 9) 全流程写入 `SeedBackups`（collection、docId、op、before/after、runId），可用 `mode:rollback` 回滚到执行前状态。
 
 ## 返回
